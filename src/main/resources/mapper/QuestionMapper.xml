@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.linzp.levelingartifact.mapper.QuestionMapper">
+
+    <sql id="sqlFields">
+        id,
+        title,
+        content,
+        tags,
+        answer,
+        user_id,
+        review_status,
+        review_message,
+        reviewer_id,
+        review_time,
+        view_num,
+        thumb_num,
+        favour_num,
+        priority,
+        need_vip,
+        edit_time,
+        create_time,
+        update_time,
+        is_delete
+    </sql>
+
+    <resultMap id="baseMap" type="com.linzp.levelingartifact.model.entity.Question">
+        <id property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="content" column="content"/>
+        <result property="tags" column="tags"/>
+        <result property="answer" column="answer"/>
+        <result property="userId" column="user_id"/>
+        <result property="reviewStatus" column="review_status"/>
+        <result property="reviewMessage" column="review_message"/>
+        <result property="reviewerId" column="reviewer_id"/>
+        <result property="reviewTime" column="review_time"/>
+        <result property="viewNum" column="view_num"/>
+        <result property="thumbNum" column="thumb_num"/>
+        <result property="favourNum" column="favour_num"/>
+        <result property="priority" column="priority"/>
+        <result property="needVip" column="need_vip"/>
+        <result property="editTime" column="edit_time"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="isDelete" column="is_delete"/>
+    </resultMap>
+
+</mapper>
