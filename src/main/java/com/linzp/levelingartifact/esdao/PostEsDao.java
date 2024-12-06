@@ -1,16 +1,16 @@
-package com.linzp.levelingartifact.esdao;
-
-import com.linzp.levelingartifact.model.dto.post.PostEsDTO;
-import java.util.List;
-import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
-
-/**
- * 帖子 ES 操作
- *
- * @author  linzp
- *  
- */
-public interface PostEsDao extends ElasticsearchRepository<PostEsDTO, Long> {
-
-    List<PostEsDTO> findByUserId(Long userId);
-}
+//package com.linzp.levelingartifact.esdao;
+//
+//import com.linzp.levelingartifact.model.dto.post.PostEsDTO;
+//import java.util.List;
+//import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
+//
+///**
+// * 帖子 ES 操作
+// *
+// * @author  linzp
+// *
+// */
+//public interface PostEsDao extends ElasticsearchRepository<PostEsDTO, Long> {
+//
+//    List<PostEsDTO> findByUserId(Long userId);
+//}
